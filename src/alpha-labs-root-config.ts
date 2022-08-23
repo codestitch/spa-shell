@@ -18,11 +18,7 @@ const layoutEngine = constructLayoutEngine({ routes, applications });
 applications.forEach(registerApplication);
 
 System.import("@alpha-labs/react-components").then(() => {
-  // System.import('@alpha-labs/styleguide').then(() => {
   // Activate the layout engine once the styleguide CSS is loaded
   layoutEngine.activate();
   start();
 });
-
-// layoutEngine.activate();
-// start();

@@ -16,11 +16,15 @@
   </route>
 
   -->
-
+  <nav>
+    <application name="@alpha-labs/navigation"></application>
+  </nav>
   <main>
     <route default>
-      <!-- <application name="@single-spa/welcome"></application> -->
-      <application name="@alpha-labs/navigation"></application>
+      <application name="@single-spa/welcome"></application>
+    </route>
+    <route path="dashboard">
+      <application name="@alpha-labs/dashboard"></application>
     </route>
   </main>
 </single-spa-router>

@@ -39,7 +39,8 @@
             "imports": {
                "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
                "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js",
-               "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js"
+               "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js",
+               "tailwind": "https://ga.jspm.io/npm:tailwind@4.0.0/dist/tailwind.js"
             }
          }
       </script>
@@ -62,6 +63,7 @@
                "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
                "@alpha-labs/root-config": "https://localhost:9000/alpha-labs-root-config.js",
                "@alpha-labs/navigation": "https://localhost:9001/alpha-labs-navigation.js",
+               "@alpha-labs/dashboard": "https://localhost:9002/alpha-labs-dashboard.js",
                "@alpha-labs/react-components": "https://localhost:9100/alpha-labs-react-components.js"
             }
          }
@@ -94,5 +96,10 @@
          show-when-local-storage="devtools"
          dev-libs
       ></import-map-overrides-full>
+      <script
+         async
+         src="https://ga.jspm.io/npm:es-module-shims@1.5.1/dist/es-module-shims.js"
+         crossorigin="anonymous"
+      ></script>
    </body>
 </html>
